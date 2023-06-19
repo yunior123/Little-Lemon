@@ -12,14 +12,14 @@ struct MenuItemsOptionView: View {
         NavigationView {
             Form {
                 Section(header: Text("SELECTED CATEGORIES")) {
-                    Text("Food")
-                    Text("Drink")
-                    Text("Dessert")
+                    Text(MenuCategory.food.rawValue)
+                    Text(MenuCategory.drinks.rawValue)
+                    Text(MenuCategory.dessert.rawValue)
                 }
                 Section(header: Text("SORT BY")) {
-                    Text("Most Popular")
-                    Text("Price $-$$$")
-                    Text("A-Z")
+                    Text(MenuSort.mostPopular.rawValue)
+                    Text(MenuSort.priceLowToHigh.rawValue)
+                    Text(MenuSort.alphabetical.rawValue)
                 }
             }
             .navigationBarTitle("Filter")
